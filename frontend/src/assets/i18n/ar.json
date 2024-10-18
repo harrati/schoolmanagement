@@ -1,0 +1,230 @@
+{
+    "from-to": "العناصر من {first} إلى {last} (الإجمالي {totalRecords})",
+    "new": "جديد",
+    "search": "بحث",
+    "export": "تصدير",
+    "validate": "التحقق",
+    "search": "البحث...",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "next": "التالي",
+    "yes": "نعم",
+    "no": "لا",
+    "actions": "الإجراءات",
+    "confirm": "تأكيد",
+    "creation": "إنشاء",
+    "list": "قائمة",
+
+    "actionPermission": {
+        "reference": "المرجع",
+        "libelle": "التسمية",
+        "actionPermission": "إذن الإجراء",
+        "tabPan": "إذن الإجراء",
+        "header": "قائمة أذونات الإجراءات",
+        "deleteActionPermissionConfirmationMessage": "هل أنت متأكد أنك تريد حذف إذن الإجراء؟",
+        "deleteActionPermissionsConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+    },
+
+    "modelPermissionUser": {
+        "actionPermission": "إذن الإجراء",
+        "actionPermissionPlaceHolder": "اختر إذن الإجراء",
+        "actionPermissionPlaceHolderFilter": "البحث حسب إذن الإجراء",
+        "modelPermission": "إذن النموذج",
+        "modelPermissionPlaceHolder": "اختر إذن النموذج",
+        "modelPermissionPlaceHolderFilter": "البحث حسب إذن النموذج",
+        "value": "القيمة",
+        "user": "المستخدم",
+        "userPlaceHolder": "اختر مستخدمًا",
+        "userPlaceHolderFilter": "البحث حسب المستخدم",
+        "subAttribute": "السمة الفرعية",
+        "modelPermissionUser": "إذن مستخدم النموذج",
+        "tabPan": "إذن مستخدم النموذج",
+        "header": "قائمة مستخدمي إذن النموذج",
+        "deleteModelPermissionUserConfirmationMessage": "هل أنت متأكد أنك تريد حذف مستخدم إذن النموذج؟",
+        "deleteModelPermissionUsersConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+    },
+
+    "role": {
+        "authority": "السلطة",
+        "role": "الدور",
+        "tabPan": "الدور",
+        "header": "قائمة الأدوار",
+        "deleteRoleConfirmationMessage": "هل أنت متأكد أنك تريد حذف الدور؟",
+        "deleteRolesConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+    },
+
+    "roleUser": {
+        "role": "الدور",
+        "rolePlaceHolder": "اختر دورًا",
+        "rolePlaceHolderFilter": "البحث حسب الدور",
+        "user": "المستخدم",
+        "userPlaceHolder": "اختر مستخدمًا",
+        "userPlaceHolderFilter": "البحث حسب المستخدم",
+        "roleUser": "دور المستخدم",
+        "tabPan": "دور المستخدم",
+        "header": "قائمة مستخدمي الدور",
+        "deleteRoleUserConfirmationMessage": "هل أنت متأكد أنك تريد حذف مستخدم الدور؟",
+        "deleteRoleUsersConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+    },
+
+    "user": {
+        "credentialsNonExpired": "صلاحية الاعتماد غير منتهية",
+        "enabled": "مفعل",
+        "email": "البريد الإلكتروني",
+        "accountNonExpired": "الحساب غير منتهي",
+        "accountNonLocked": "الحساب غير مقفل",
+        "username": "اسم المستخدم",
+        "password": "كلمة المرور",
+        "passwordChanged": "تم تغيير كلمة المرور",
+        "modelPermissionUsers": "مستخدمو إذن النموذج",
+        "roleUsers": "مستخدمو الدور",
+        "RoleUsersPlaceHolder": "حدد عدة أدوار",
+        "user": "المستخدم",
+        "tabPan": "المستخدم",
+        "header": "قائمة المستخدمين",
+        "deleteUserConfirmationMessage": "هل أنت متأكد أنك تريد حذف المستخدم؟",
+        "deleteUsersConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+    },
+
+	"modelPermission": {
+		"reference": "المرجع",
+		"libelle": "التسمية",
+		"modelPermission": "إذن النموذج",
+		"tabPan": "إذن النموذج",
+		"header": "قائمة أذونات النماذج",
+		"deleteModelPermissionConfirmationMessage": "هل أنت متأكد أنك تريد حذف إذن النموذج؟",
+		"deleteModelPermissionsConfirmationMessage": "هل أنت متأكد أنك تريد حذف العناصر المحددة؟"
+	},
+
+
+
+    "student":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "registrationDate": "Registration date",
+        "registrationDateMin": "Registration date Min",
+        "registrationDateMax": "Registration date Max",
+        "school": "School",
+        "schoolPlaceHolder": "Select a School",
+        "schoolPlaceHolderFilter": "Search by School",
+        "payments": "Payments",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "student": "Student",
+        "tabPan": "Student",
+        "header": "Liste des students",
+        "deleteStudentConfirmationMessage": "Are you sure you want to delete student",
+        "deleteStudentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "school":{
+        "name": "Name",
+        "address": "Address",
+        "phoneNumber": "Phone number",
+        "description": "Description",
+        "principal": "Principal",
+        "principalPlaceHolder": "Select a Principal",
+        "principalPlaceHolderFilter": "Search by Principal",
+        "staffs": "Staffs",
+        "professors": "Professors",
+        "students": "Students",
+        "school": "School",
+        "tabPan": "School",
+        "header": "Liste des schools",
+        "deleteSchoolConfirmationMessage": "Are you sure you want to delete school",
+        "deleteSchoolsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "staff":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "role": "Role",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "staff": "Staff",
+        "tabPan": "Staff",
+        "header": "Liste des staffs",
+        "deleteStaffConfirmationMessage": "Are you sure you want to delete staff",
+        "deleteStaffsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "professor":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "speciality": "Speciality",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "professor": "Professor",
+        "tabPan": "Professor",
+        "header": "Liste des professors",
+        "deleteProfessorConfirmationMessage": "Are you sure you want to delete professor",
+        "deleteProfessorsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "payment":{
+        "amount": "Amount",
+        "amountMin": "Amount Min",
+        "amountMax": "Amount Max",
+        "paymentDate": "Payment date",
+        "paymentDateMin": "Payment date Min",
+        "paymentDateMax": "Payment date Max",
+        "student": "Student",
+        "studentPlaceHolder": "Select a Student",
+        "studentPlaceHolderFilter": "Search by Student",
+        "payment": "Payment",
+        "tabPan": "Payment",
+        "header": "Liste des payments",
+        "deletePaymentConfirmationMessage": "Are you sure you want to delete payment",
+        "deletePaymentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "principal":{
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "passwordChanged": "Password changed",
+        "accountNonLocked": "Account non locked",
+        "password": "Password",
+        "email": "Email",
+        "enabled": "Enabled",
+        "credentialsNonExpired": "Credentials non expired",
+        "accountNonExpired": "Account non expired",
+        "username": "Username",
+        "principal": "Principal",
+        "tabPan": "Principal",
+        "header": "Liste des principals",
+        "deletePrincipalConfirmationMessage": "Are you sure you want to delete principal",
+        "deletePrincipalsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+

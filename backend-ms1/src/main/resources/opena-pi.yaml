@@ -1,0 +1,603 @@
+openapi: 3.0.3
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /students:
+    get:
+      summary: List all students
+      operationId: listStudents
+      tags:
+        - students
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of students
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Students'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a student
+      operationId: createStudents
+      tags:
+        - students
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /students/{studentId}:
+    get:
+      summary: Info for a specific student
+      operationId: showStudentById
+      tags:
+        - students
+      parameters:
+        - name: studentId
+          in: path
+          required: true
+          description: The id of the student to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Students'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /schools:
+    get:
+      summary: List all schools
+      operationId: listSchools
+      tags:
+        - schools
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of schools
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Schools'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a school
+      operationId: createSchools
+      tags:
+        - schools
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /schools/{schoolId}:
+    get:
+      summary: Info for a specific school
+      operationId: showSchoolById
+      tags:
+        - schools
+      parameters:
+        - name: schoolId
+          in: path
+          required: true
+          description: The id of the school to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Schools'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /staffs:
+    get:
+      summary: List all staffs
+      operationId: listStaffs
+      tags:
+        - staffs
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of staffs
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Staffs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a staff
+      operationId: createStaffs
+      tags:
+        - staffs
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /staffs/{staffId}:
+    get:
+      summary: Info for a specific staff
+      operationId: showStaffById
+      tags:
+        - staffs
+      parameters:
+        - name: staffId
+          in: path
+          required: true
+          description: The id of the staff to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Staffs'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /professors:
+    get:
+      summary: List all professors
+      operationId: listProfessors
+      tags:
+        - professors
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of professors
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Professors'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a professor
+      operationId: createProfessors
+      tags:
+        - professors
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /professors/{professorId}:
+    get:
+      summary: Info for a specific professor
+      operationId: showProfessorById
+      tags:
+        - professors
+      parameters:
+        - name: professorId
+          in: path
+          required: true
+          description: The id of the professor to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Professors'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /payments:
+    get:
+      summary: List all payments
+      operationId: listPayments
+      tags:
+        - payments
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of payments
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Payments'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a payment
+      operationId: createPayments
+      tags:
+        - payments
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /payments/{paymentId}:
+    get:
+      summary: Info for a specific payment
+      operationId: showPaymentById
+      tags:
+        - payments
+      parameters:
+        - name: paymentId
+          in: path
+          required: true
+          description: The id of the payment to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Payments'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /principals:
+    get:
+      summary: List all principals
+      operationId: listPrincipals
+      tags:
+        - principals
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of principals
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Principals'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a principal
+      operationId: createPrincipals
+      tags:
+        - principals
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /principals/{principalId}:
+    get:
+      summary: Info for a specific principal
+      operationId: showPrincipalById
+      tags:
+        - principals
+      parameters:
+        - name: principalId
+          in: path
+          required: true
+          description: The id of the principal to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Principals'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  
+
+
+definitions:
+  Student:
+    type: "object"
+    required:
+      - id
+      - firstName
+      - lastName
+      - phoneNumber
+      - registrationDate
+      - passwordChanged
+      - accountNonLocked
+      - password
+      - email
+      - enabled
+      - credentialsNonExpired
+      - accountNonExpired
+      - username
+    properties:
+      id:
+        type: int
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phoneNumber:
+        type: string
+      registrationDate:
+        type: date
+      passwordChanged:
+        type: boolean
+      accountNonLocked:
+        type: boolean
+      password:
+        type: string
+      email:
+        type: string
+      enabled:
+        type: boolean
+      credentialsNonExpired:
+        type: boolean
+      accountNonExpired:
+        type: boolean
+      username:
+        type: string
+  Students:
+    type: array
+    items:
+      $ref: '#/definitions/Student'
+  School:
+    type: "object"
+    required:
+      - id
+      - name
+      - address
+      - phoneNumber
+      - description
+    properties:
+      id:
+        type: int
+      name:
+        type: string
+      address:
+        type: string
+      phoneNumber:
+        type: string
+      description:
+        type: string
+  Schools:
+    type: array
+    items:
+      $ref: '#/definitions/School'
+  Staff:
+    type: "object"
+    required:
+      - id
+      - firstName
+      - lastName
+      - phoneNumber
+      - role
+      - passwordChanged
+      - accountNonLocked
+      - password
+      - email
+      - enabled
+      - credentialsNonExpired
+      - accountNonExpired
+      - username
+    properties:
+      id:
+        type: int
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phoneNumber:
+        type: string
+      role:
+        type: string
+      passwordChanged:
+        type: boolean
+      accountNonLocked:
+        type: boolean
+      password:
+        type: string
+      email:
+        type: string
+      enabled:
+        type: boolean
+      credentialsNonExpired:
+        type: boolean
+      accountNonExpired:
+        type: boolean
+      username:
+        type: string
+  Staffs:
+    type: array
+    items:
+      $ref: '#/definitions/Staff'
+  Professor:
+    type: "object"
+    required:
+      - id
+      - firstName
+      - lastName
+      - phoneNumber
+      - speciality
+      - passwordChanged
+      - accountNonLocked
+      - password
+      - email
+      - enabled
+      - credentialsNonExpired
+      - accountNonExpired
+      - username
+    properties:
+      id:
+        type: int
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phoneNumber:
+        type: string
+      speciality:
+        type: string
+      passwordChanged:
+        type: boolean
+      accountNonLocked:
+        type: boolean
+      password:
+        type: string
+      email:
+        type: string
+      enabled:
+        type: boolean
+      credentialsNonExpired:
+        type: boolean
+      accountNonExpired:
+        type: boolean
+      username:
+        type: string
+  Professors:
+    type: array
+    items:
+      $ref: '#/definitions/Professor'
+  Payment:
+    type: "object"
+    required:
+      - id
+      - amount
+      - paymentDate
+    properties:
+      id:
+        type: int
+      amount:
+        type: number
+      paymentDate:
+        type: date
+  Payments:
+    type: array
+    items:
+      $ref: '#/definitions/Payment'
+  Principal:
+    type: "object"
+    required:
+      - id
+      - firstName
+      - lastName
+      - phoneNumber
+      - passwordChanged
+      - accountNonLocked
+      - password
+      - email
+      - enabled
+      - credentialsNonExpired
+      - accountNonExpired
+      - username
+    properties:
+      id:
+        type: int
+      firstName:
+        type: string
+      lastName:
+        type: string
+      phoneNumber:
+        type: string
+      passwordChanged:
+        type: boolean
+      accountNonLocked:
+        type: boolean
+      password:
+        type: string
+      email:
+        type: string
+      enabled:
+        type: boolean
+      credentialsNonExpired:
+        type: boolean
+      accountNonExpired:
+        type: boolean
+      username:
+        type: string
+  Principals:
+    type: array
+    items:
+      $ref: '#/definitions/Principal'
+
+  Error:
+    type: "object"
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

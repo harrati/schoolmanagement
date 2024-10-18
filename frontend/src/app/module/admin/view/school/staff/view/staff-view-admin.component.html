@@ -1,0 +1,88 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'staff.tabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="{{'staff.tabPan' | translate}}">
+                <div class="grid">
+                    <div class="field col-12 md:col-6">
+                        <label for="1">{{'staff.firstName' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.firstName' | translate}}" autofocus  id="1" [ngModel]="item.firstName">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="2">{{'staff.lastName' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.lastName' | translate}}" autofocus  id="2" [ngModel]="item.lastName">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="3">{{'staff.phoneNumber' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.phoneNumber' | translate}}" autofocus  id="3" [ngModel]="item.phoneNumber">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="4">{{'staff.role' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.role' | translate}}" autofocus  id="4" [ngModel]="item.role">
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-6">
+                        <div  class="label-inputswitch">
+                            <label for="5">{{'staff.passwordChanged' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="5"  [disabled]="true" [ngModel]="item.passwordChanged"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-6">
+                        <div  class="label-inputswitch">
+                            <label for="6">{{'staff.accountNonLocked' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="6"  [disabled]="true" [ngModel]="item.accountNonLocked"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="8">{{'staff.email' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.email' | translate}}" autofocus  id="8" [ngModel]="item.email">
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-6">
+                        <div  class="label-inputswitch">
+                            <label for="9">{{'staff.enabled' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="9"  [disabled]="true" [ngModel]="item.enabled"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-6">
+                        <div  class="label-inputswitch">
+                            <label for="10">{{'staff.credentialsNonExpired' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="10"  [disabled]="true" [ngModel]="item.credentialsNonExpired"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field align-inputswitch col-12  md:col-6">
+                        <div  class="label-inputswitch">
+                            <label for="11">{{'staff.accountNonExpired' | translate}}</label>
+                        </div>
+                        <div class="input-switch">
+                            <p-inputSwitch id="11"  [disabled]="true" [ngModel]="item.accountNonExpired"></p-inputSwitch>
+                        </div>
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="12">{{'staff.username' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'staff.username' | translate}}" autofocus  id="12" [ngModel]="item.username">
+                    </div>
+                </div>
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="p-flexbox">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+
